@@ -1,7 +1,7 @@
 # PolyRun
 
-Run more scripts from one opened Sublime Text editor is not enable. This extension unlock it.
-PolyRun made for Debian Linux, if you would like to use it with anything else, you should change the called terminal in the code.
+Running multiple scripts from a single opened Sublime Text editor is not enabled. This extension unlocks it.
+PolyRun was made for Debian Linux. If you would like to use it with anything else, you should change the called terminal in the code.
 
 ## Features
 - Opens a new external terminal window for script execution.
@@ -19,5 +19,5 @@ PolyRun made for Debian Linux, if you would like to use it with anything else, y
 ## Usage
 - Press `Ctrl+B` while editing a Python file to run it in a new terminal window.
 
-## Costumazation
-Whether you want you can replace the default shortcut `["ctrl+b"]` by yourself in Default.sublime-keymap file.
+## Customization
+If you want, you can replace the default shortcut `["ctrl+b"]` by yourself in Default.sublime-keymap file.
