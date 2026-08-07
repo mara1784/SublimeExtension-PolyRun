@@ -18,3 +18,6 @@ PolyRun made for Debian Linux, if you would like to use it with anything else, y
 
 ## Usage
 - Press `Ctrl+B` while editing a Python file to run it in a new terminal window.
+
+## Costumazation
+Whether you want you can replace the default shortcut `["ctrl+b"]` by yourself in Default.sublime-keymap file.
