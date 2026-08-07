@@ -1,0 +1,6 @@
+[
+{
+"keys": ["ctrl+b"],
+"command": "run_python_scripts_in_more_terminals"
+}
+]
