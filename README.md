@@ -6,7 +6,7 @@ PolyRun was made for Debian Linux. If you would like to use it with anything els
 ## Features
 - Opens a new external terminal window for script execution.
 - Allows running multiple scripts at the same time without blocking Sublime Text.
-- Pre-configured keyboard shortcut (`Ctrl+B`).
+- I pre-configured keyboard shortcut (`Ctrl+B`) for you in Default.sublime-keymap.example, if you want it, you must set up in Sublime Editor.
 
 ## Installation
 
@@ -17,7 +17,8 @@ PolyRun was made for Debian Linux. If you would like to use it with anything els
 4. Search for `PolyRun` and press `Enter`.
 
 ## Usage
-- Press `Ctrl+B` while editing a Python file to run it in a new terminal window.
+- Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) press Enter and write into open field `Run python script in Terminal`
+- If you've set up a shortcut, you can press `Ctrl+B` or your choise while editing a Python file to run it in a new terminal window.
 
 ## Customization
-If you want, you can replace the default shortcut `["ctrl+b"]` by yourself in Default.sublime-keymap file.
+If you want, you can replace the default shortcut `["ctrl+b"]` by yourself in Default.sublime-keymap.example file.
