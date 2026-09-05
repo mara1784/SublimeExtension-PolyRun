@@ -18,7 +18,7 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
             "x-terminal-emulator",
             "-e",
             "bash",
-            "-c",
+            "-ic",
             # there you can costumize languages that run scripts:
             '''
             python3 -u "{file}";
