@@ -1,6 +1,18 @@
 [
 {
 "keys": ["ctrl+b"],
-"command": "run_python_scripts_in_more_terminals"
+"command": "run_python_scripts_in_more_terminals",
+"context": [
+  {
+    "key": "setting.is_widget",
+    "operator": "equal",
+    "operand": false
+  },
+  {
+    "key": "selector",
+    "operator": "equal",
+    "operand": "source.python"
+  }
+]
 }
 ]
