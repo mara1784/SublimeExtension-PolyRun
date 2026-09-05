@@ -20,11 +20,11 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
             "bash",
             "-c",
             # there you can costumize languages that run scripts:
-            f'''
+            '''
             python3 -u "{file}";
             echo;
             read -p "Press Enter for close..."
-            '''
+            '''.format(file=file)
         ]
 
         subprocess.Popen(cmd)
