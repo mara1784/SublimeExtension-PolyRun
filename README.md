@@ -29,4 +29,4 @@ PolyRun was made for Debian Linux. If you would like to use it with anything els
   4. In User folder insert the `Default.sublime-keymap.example` from this github site without `.example` ending.
 
 ### Customization
-If you want, you can replace the default shortcut `["ctrl+b"]` by yourself.
+If you want, you can replace the default shortcut `["ctrl+b"]` by yourself in `Default.sublime-keymap.example`.
