@@ -23,7 +23,7 @@ PolyRun was made for Debian Linux. If you would like to use it with anything els
 ## Set up keybinds
 - I recommend set up keybind.
 - You can do it this way:
-- 1. Open Sublime Text
+  1. Open Sublime Text
   2. Click on `Preferences` in top menu and there chose `Browse Packages...`
   3. Open the `User` folder
   4. In User folder insert the `Default.sublime-keymap.example` from this github site without `.example` ending.
