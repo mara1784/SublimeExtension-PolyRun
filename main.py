@@ -16,12 +16,12 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
 
         system =  platform.system()
         if system == "Windows":
-                file = file.replace("\\", "/")
                 cmd = [
                     "cmd.exe",
                     "/c",
                     "start",
-                    "cmd",
+                    "",
+                    "cmd.exe",
                     "/k",
                     'python3 -u "{file}"'.format(file=file)
                 ]
@@ -44,4 +44,9 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
                     '"python3 -u \\"{file}\\"; echo; read -p \\"Press Enter to close...\\""'
                 ).format(file=file)
                 cmd = ["osascript", "-e", script]
+        else:
+            sublime.error_message(
+                "Unsupported operating system: " + system
+            )
+            return
         subprocess.Popen(cmd)
