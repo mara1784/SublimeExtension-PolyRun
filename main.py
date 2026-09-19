@@ -14,8 +14,8 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
         view.run_command("save")
         file = view.file_name()
 
-        match platform.system():
-            case "Windows":
+        system =  platform.system():
+        if system == "Windows":
                 cmd = [
                     "cmd.exe",
                     "/c",
@@ -25,7 +25,7 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
                     f'python3 -u "{file}"'
                 ]
 
-            case "Linux":
+        elif system == "Linux":
                 cmd = [
                     "x-terminal-emulator",
                     "-e",
@@ -38,7 +38,7 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
                     read -p "Press Enter for close..."
                     '''.format(file=file)
                 ]
-            case "Darwin":
+        elif system == "Darwin":
                 script = (
                     f'tell application "Terminal" to do script '
                     f'"python3 -u \\"{file}\\"; echo; read -p \\"Press Enter to close...\\""'
