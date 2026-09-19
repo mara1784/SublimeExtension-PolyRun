@@ -22,7 +22,7 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
                     "start",
                     "cmd",
                     "/k",
-                    f'python3 -u "{file}"'
+                    'python3 -u "{file}"'.format(file=file)
                 ]
         elif system == "Linux":
                 cmd = [
@@ -39,8 +39,8 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
                 ]
         elif system == "Darwin":
                 script = (
-                    f'tell application "Terminal" to do script '
-                    f'"python3 -u \\"{file}\\"; echo; read -p \\"Press Enter to close...\\""'
-                )
+                    'tell application "Terminal" to do script '
+                    '"python3 -u \\"{file}\\"; echo; read -p \\"Press Enter to close...\\""'
+                ).format(file=file)
                 cmd = ["osascript", "-e", script]
         subprocess.Popen(cmd)
