@@ -14,7 +14,7 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
         view.run_command("save")
         file = view.file_name()
 
-        system =  platform.system():
+        system =  platform.system()
         if system == "Windows":
                 cmd = [
                     "cmd.exe",
@@ -24,7 +24,6 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
                     "/k",
                     f'python3 -u "{file}"'
                 ]
-
         elif system == "Linux":
                 cmd = [
                     "x-terminal-emulator",
