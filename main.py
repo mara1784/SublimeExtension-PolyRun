@@ -16,15 +16,19 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
 
         system =  platform.system()
         if system == "Windows":
-                cmd = [
-                    "cmd.exe",
-                    "/c",
-                    "start",
-                    "",
-                    "cmd.exe",
-                    "/k",
-                    'python3 -u "{file}"'.format(file=file)
-                ]
+            cmd = [
+                "cmd.exe",
+                "/k",
+                "python3",
+                "-u",
+                file
+            ]
+        
+            subprocess.Popen(
+                cmd,
+                creationflags=subprocess.CREATE_NEW_CONSOLE
+            )
+            return
         elif system == "Linux":
                 cmd = [
                     "x-terminal-emulator",
