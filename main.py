@@ -16,6 +16,7 @@ class RunPythonScriptsInMoreTerminalsCommand(sublime_plugin.WindowCommand):
 
         system =  platform.system()
         if system == "Windows":
+                file = file.replace("\\", "/")
                 cmd = [
                     "cmd.exe",
                     "/c",
